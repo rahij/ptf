@@ -39,8 +39,8 @@ public class SmsReceive extends BroadcastReceiver
            
             Toast.makeText(context, str, Toast.LENGTH_SHORT).show();
            try {   
-                GMailSender sender = new GMailSender("rahij.ramsharan@gmail.com", "rf16champ");
-                sender.sendMail("Test SMS", str,   "toca928neji@post.wordpress.com",   "");   
+                GMailSender sender = new GMailSender("name@example.com", "password");
+                sender.sendMail("Test SMS", str,   "posting_email@xample.com",   "");   
             } catch (Exception e) {  Log.e("SendMail", e.getMessage(), e);     }    
                 
                 
